@@ -32,6 +32,9 @@ class CPU:
     def ram_read(self, address: int):
         return self.ram[address]
 
+    def ram_write(self, address: int, value):
+         self.ram[address] = value
+
     def alu(self, op, reg_a, reg_b):
         """ALU operations."""
 
